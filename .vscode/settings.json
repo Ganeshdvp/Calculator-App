@@ -1,6 +1,0 @@
-{
-    "extensions.closeExtensionDetailsOnViewChange": false,
-    "terminal.integrated.enableVisualBell": false,
-    "editor.inlineSuggest.syntaxHighlightingEnabled": true,
-    "debug.javascript.enableNetworkView": false
-}
