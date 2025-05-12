@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+#toggleBtn {
+    color: rgb(209, 199, 199);
+    cursor: pointer;
+    position: absolute;
+    left: 1400px;
+    top: 50px;
+    padding: 15px;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+.container {
+    background-color: var(--background-secondary);
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.result {
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+    text-align: end;
+    font-size: 30px;
+    height: 150px;
+    overflow: auto;
+}
+
+#history {
+    color: var(--text-secondary);
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1px;
+    height: 600px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    gap: 1px;
+    ;
+}
+
+.row button {
+    width: 100%;
+    height: 90px;
+    border-radius: 0 0 0 0;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--background-quaternary);
+    color: var(--text-primary);
+}
+
+.row button:hover {
+    background-color: var(--background-quinary);
+    color: var(--text-tertiary);
+}
+
+.row button:active {
+    background-color: var(--background-senary);
+    color: var(--text-tertiary);
+}
+
+#equals {
+    width: 200%;
+    border-radius: 0 0 20px;
+}
+
+#dot {
+    font-weight: 600;
+    border-radius: 0 0 0 20px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width:568px) {
+    /* For mobile devices */
+    .container {
+        height: 600px;
+        width: 300px;
+    }
+    #toggleBtn {
+        position: absolute;
+        left: 40%;
+        top: 50px;
+    }
+}
+@media screen and (min-width:568px) and (max-width: 768px){
+    /* For tablets */
+    #toggleBtn {
+        position: absolute;
+        left: 40%;
+        top: 50px;
+    } 
+}
+@media screen and (min-width:768px) and (max-width: 1024px){
+    /* For desktops */
+    #toggleBtn {
+        position: absolute;
+        left: 40%;
+        top: 50px;
+    } 
+}
+@media screen and (min-width:1024px){
+    /* For big screens */
+    #toggleBtn {
+        position: absolute;
+        left: 80%;
+        top: 50px;
+    } 
+}
+
+/* for Themes */
+
+.dark-theme {
+    --background-primary: #000;
+    /* for body bg */
+    --background-secondary: #ffffff;
+    /* for container bg */
+    --background-tertiary: #eae8e8;
+    /* for result bg */
+    --background-quaternary: #ff0000;
+    /* for row button bg */
+    --background-quinary: #8e0101;
+    /* for row button hover */
+    --background-senary: #090000;
+    /* for row button active */
+    --box-shadow: red 0px 0px 20px;
+    /* for container shadow */
+    --text-primary: #000000;
+    /* for body text and result text color and row button text color*/
+    --text-secondary: #00000070;
+    /* for history text color */
+    --text-tertiary: #ffffff;
+    /* for row button hover text color and active text color also*/
+}
+
+.light-theme {
+    --background-primary: #ffffff;
+    /* for body bg */
+    --background-secondary: #000000;
+    /* for container bg */
+    --background-tertiary: #baacac;
+    /* for result bg */
+    --background-quaternary: #ffffff;
+    /* for row button bg */
+    --background-quinary: #615b5b;
+    /* for row button hover */
+    --background-senary: #3d3838;
+    /* for row button active */
+    --box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+    /* for container shadow */
+    --text-primary: #252121;
+    /* for body text and result text color and row button text color*/
+    --text-secondary: #00000070;
+    /* for history text color */
+    --text-tertiary: #ffffff;
+    /* for row button hover text color and active text color also*/
+}
