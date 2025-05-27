@@ -24,7 +24,7 @@ function updateDisplay(input) {
   if (input === "DEL") {
     result.innerText = currentDisplay.substring(0, currentDisplay.length - 1);
   } else if (input === "AC") {
-    result.innerText = "0";
+    result.innerText = "";
     history.innerText = "";
   } else if (input != "AC" && input != "DEL" && input != "=") {
     result.innerText += input;
